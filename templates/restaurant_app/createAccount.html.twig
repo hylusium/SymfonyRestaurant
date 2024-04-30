@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Create Account
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('../../Styles/Main.css')}}">
+    <link rel="stylesheet" href="{{asset('../../Styles/CreateAccount.css')}}">
+{% endblock %}
+
+{% block body %}
+    
+ <header>
+        <div class="HeaderTitle">
+            <h1>App Restaurant</h1>
+        </div>
+        <div class="Nav">
+            <ul>
+                <a href="/">
+                    <li>Accueil</li>
+                </a>
+                <a href="/Login">
+                    <li>Login</li>
+                </a>
+                <a href="/Account">
+                    <li>Compte</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="CreateAccountCard">
+            <div class="cardTitle"><h2>Create Account</h2></div>
+            <div class="cardBody">
+                <form action="/RedirectCreate" method="post">
+                    Nom : <br>
+                    <input type="text" name="nom">
+                    <br>
+                    Prenom : <br>
+                    <input type="text" name="prenom">
+                    <br>
+                    Nom D'utillisateur : <br>
+                    <input type="text" name="username">
+                    <br>
+                    mot de passe : <br>
+                    <input type="password" name="password">
+                    <br>
+                    <div class="confirm"><input type="submit" value="S'inscrire"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

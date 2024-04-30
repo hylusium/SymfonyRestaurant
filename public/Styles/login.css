@@ -1,0 +1,66 @@
+.loginCard {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: rgb(33, 33, 33);
+}
+
+.loginTitle {
+    margin: 5%;
+}
+
+.MainLogin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 200px;
+    color: black;
+    background-color: rgb(170, 170, 170);
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 4px;
+    margin: 2%;
+}
+
+.submit input {
+    transition: 0.2s;
+    height: 30px;
+    width: 150px;
+    color: white;
+    background-color: rgb(33, 33, 33);
+}
+
+.submit input:hover {
+    color: white;
+    background-color: rgb(170, 170, 170);
+    cursor: pointer;
+}
+.create{
+    margin: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create a{
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 4px;
+    align-items: center;
+    padding: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.create a:hover{
+    background-color: rgb(170, 170, 170);
+}
